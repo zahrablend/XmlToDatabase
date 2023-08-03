@@ -35,8 +35,8 @@ namespace XmlToDatabase
                 command.Parameters.AddWithValue("@author", book.Author);
                 command.Parameters.AddWithValue("@title", book.Title);
                 command.Parameters.AddWithValue("@genre", book.Genre);
-                command.Parameters.AddWithValue("@price", Convert.ToDecimal(book.Price));
-                command.Parameters.AddWithValue("@publish_date", Convert.ToDateTime(book.PublishDate));
+                command.Parameters.AddWithValue("@price", book.Price);
+                command.Parameters.AddWithValue("@publish_date", book.PublishDate);
                 command.Parameters.AddWithValue("@description", book.Description);
                 command.ExecuteNonQuery();
             }
