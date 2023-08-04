@@ -1,0 +1,34 @@
+﻿//XDocument doc = XDocument.Load("books.xml");
+            //var books = from b in doc.Descendants("book")
+            //            select new Book(
+            //                (int?)b.Element("id") ?? 0,
+            //                (string?)b.Element("author") ?? string.Empty,
+            //                (string?)b.Element("title") ?? string.Empty,
+            //                (string?)b.Element("genre") ?? string.Empty,
+            //                (decimal?)b.Element("price") ?? 0,
+            //                (DateTime?)b.Element("publishDate") ?? DateTime.MinValue,
+            //                (string?)b.Element("description") ?? string.Empty);
+
+            //using SqlConnection connection = new(ConnectionStringConfig.BooksDbConnectionString);
+            //connection.Open();
+            //foreach (var book in dataNodes)
+            //{
+            //    //if (book.PublishDate < new DateTime(1753, 1, 1) || book.PublishDate > new DateTime(9999, 12, 31))
+            //    //{
+
+            //    //    continue;
+            //    //}
+
+            //    string insertQuery = @"INSERT INTO Books (Id, Author, Title, Genre, Price, PublishDate, Description)
+            //            VALUES (@Id, @Author, @Title, @Genre, @Price, @PublishDate, @Description)";
+            //    using SqlCommand command = new(insertQuery, connection);
+            //    command.Parameters.AddWithValue("@id", book.Id);
+            //    command.Parameters.AddWithValue("@author", book.Author);
+            //    command.Parameters.AddWithValue("@title", book.Title);
+            //    command.Parameters.AddWithValue("@genre", book.Genre);
+            //    command.Parameters.AddWithValue("@price", book.Price);
+            //    command.Parameters.AddWithValue("@publish_date", book.PublishDate);
+            //    command.Parameters.AddWithValue("@description", book.Description);
+            //    command.ExecuteNonQuery();
+            //}
+            //connection.Close();
